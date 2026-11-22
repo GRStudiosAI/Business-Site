@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+/* IMAGE FIT REVISION 2026-11-22: full portrait inside unchanged hero box */
+
 /* =========================================
    GR STUDIOS AI LLC
    COMPLETE WEBSITE STYLESHEET
@@ -92,5 +94,3 @@ summary:focus-visible {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
