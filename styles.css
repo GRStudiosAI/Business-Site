@@ -388,9 +388,11 @@ summary:focus-visible {
 }
 
 
-/* Remove GR Catgirl caption from homepage image */
-.hero-home .hero-art figcaption {
-  display: none;
+/* Hide unwanted text inside homepage image container */
+.hero-home .hero-art figcaption,
+.hero-home .hero-art.missing-art::before {
+  display: none !important;
+  content: none !important;
 }
 
 
