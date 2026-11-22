@@ -376,8 +376,9 @@ summary:focus-visible {
   width: 100%;
   height: 100%;
   position: absolute;
-  object-fit: cover;
-  object-position: center center;
+  inset: 0;
+  object-fit: contain;
+  object-position: center;
 }
 
 .hero-art figcaption {
