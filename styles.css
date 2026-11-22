@@ -376,8 +376,9 @@ summary:focus-visible {
   width: 100%;
   height: 100%;
   position: absolute;
-  object-fit: cover;
-  object-position: center center;
+  inset: 0;
+  object-fit: contain;
+  object-position: center;
 }
 
 .hero-art figcaption {
@@ -750,11 +751,3 @@ section {
     transition: none;
   }
 }
-
-/* Legal policy pages */
-.legal-policy-nav {margin:1.25rem 0 2rem;}
-.legal-policy-nav a {display:inline-block;margin:.25rem .6rem .25rem 0;}
-.legal-policy {max-width:900px; padding-bottom:3rem;}
-.legal-policy h1,.legal-policy h2 {margin:1.7rem 0 .65rem;}
-.legal-policy p,.legal-policy li {line-height:1.75; margin-bottom:.8rem;}
-.legal-policy ul {padding-left:1.5rem;}
