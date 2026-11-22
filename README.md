@@ -1,26 +1,29 @@
-# GR Studios AI LLC
+# GR Studios AI LLC Website
 
-Static source for the studio homepage and fundraiser information page. The fundraiser button takes visitors to the studio’s GoFundMe page.
+Official static website for **studio.grstudios.shop**.
 
-## Preview
+## Website
 
-Open `index.html` in a browser. No installation or build is required. Open Support from the navigation to preview the second page.
+This upgraded site includes **28 interconnected HTML pages**, a shared stylesheet, shared JavaScript, accessible responsive navigation, a sitemap, and favicon files.
 
-## Publish with GitHub Pages
+## Deployment
 
-1. Create a new public repository. Suggested name: `gr-studios-ai`.
-2. Extract the ZIP. Upload its contents to the repository root, keeping the `assets` directory. Commit to `main`. If your upload method skips hidden files, add an empty `.nojekyll` file in the repository root.
-3. Open **Settings → Pages**. Select **Deploy from a branch**, then **main** and **/(root)**. Save.
-4. When deployment finishes, use **Visit site** in Pages settings to open the public URL. A project site normally uses `https://YOUR-GITHUB-OWNER.github.io/gr-studios-ai/`.
+1. Back up the current GitHub repository.
+2. Extract this ZIP and copy its contents to the **root** of the `main` branch of `GRStudiosAI/gr-studios-ai-support`.
+3. **Keep the existing `assets/gr-catgirl-studio.png` file in the repository.** It is not bundled in this ZIP because the original image was not available to the builder.
+4. Commit and allow GitHub Pages to deploy.
+5. Keep Cloudflare CNAME `studio` pointing to `grstudiosai.github.io` (DNS only).
 
-[GitHub Pages publishing guide](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+## Icons
 
-## Optional custom URL
+The `assets/icons/` directory includes a custom GR monogram favicon in SVG, PNG, and ICO formats. Replace these with your own official icons at any time.
 
-The default GitHub Pages URL works without a custom domain. If you want to use an available subdomain you control, one option is `studio.grstudios.shop`. Verify ownership in GitHub, add the subdomain under the repository’s **Settings → Pages → Custom domain**, and create a DNS CNAME for that subdomain pointing to `YOUR-GITHUB-OWNER.github.io`. Once GitHub issues the certificate, enable **Enforce HTTPS**.
+## Artwork
 
-[GitHub Pages custom domain guide](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+- `assets/gr-catgirl-studio.png` — official silver-lavender GR Catgirl studio artwork (retain your existing copy).
+- Additional artwork can be added in `assets/catgirl/`, `assets/shadowpulse/`, `assets/music/`, `assets/comics/`, and `assets/banners/`.
+- `gr-catgirl-lavender.png` is not used.
 
-## GR Catgirl artwork
+## Notes
 
-The site looks for `assets/gr-catgirl-studio.png` on Home and `assets/gr-catgirl-lavender.png` on Support. The matching originals are **Silver-lavender catgirl in neon studio.png** and **Lavender Catgirl on Tiled Floor.png**. If the images are absent, add them at those paths. The pages display a violet background until the artwork is present.
+Project detail pages are structured placeholders for future verified content. No private backend or contact form is included. Update legal pages as the site gains new features.
