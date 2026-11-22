@@ -1,117 +1,96 @@
 
-    background: #241631;
-    border: 0;
-    border-radius: 9px;
-    box-shadow: none;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-  .site-nav .nav-dropdown[open] > .nav-links {
-    display: grid;
-  }
+/* =========================================
+   GR STUDIOS AI LLC
+   COMPLETE WEBSITE STYLESHEET
+   ========================================= */
 
-  .site-nav .nav-links a {
-    white-space: normal;
-  }
+:root {
+  color-scheme: dark;
+  --bg: #100b1b;
+  --panel: #21172f;
+  --border: #514064;
+  --text: #f5f0fb;
+  --muted: #c4b7d1;
+  --accent: #c58bff;
+  --header-bg: rgba(18, 12, 32, .97);
+  --dropdown-bg: #241631;
+  --mobile-breakpoint: 1150px;
+}
 
-  .site-nav .nav-cta {
-    margin: 5px 0 0;
-    justify-content: center;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  .hero-home {
-    min-height: 0;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  .cards {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 90% 0, #382052 0, transparent 38%),
+    var(--bg);
+  font: 16px/1.65 Inter, system-ui, sans-serif;
+  color: var(--text);
+}
+
+a {
+  color: #dfb8ff;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #dfb8ff;
+  outline-offset: 3px;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 9999;
+  background: #fff;
+  color: #111;
+  padding: .5rem;
+}
+
+.container {
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: 24px;
 }
 
 /* =========================================
-   SMALL SCREENS
+   HEADER — FIXED NAVIGATION SYSTEM
    ========================================= */
 
-@media (max-width: 700px) {
-  .container {
-    padding-inline: 17px;
-  }
-
-  .header-inner {
-    padding: 12px 17px;
-  }
-
-  .brand-icon {
-    flex-basis: 40px;
-    width: 40px;
-    height: 40px;
-  }
-
-  .brand strong {
-    font-size: .91rem;
-  }
-
-  .brand small {
-    font-size: .57rem;
-  }
-
-  .hero,
-  .hero-home {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 40px 0;
-  }
-
-  .hero-art,
-  .hero-home .hero-art {
-    min-height: 320px;
-  }
-
-  .hero-home h1 {
-    font-size: clamp(2.2rem, 9vw, 3.4rem);
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  .section-heading,
-  .footer-grid {
-    display: block;
-  }
-
-  .intro {
-    padding-top: 45px;
-  }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .3);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  overflow: visible;
 }
 
-@media (max-width: 390px) {
-  .brand small {
-    display: none;
-  }
-
-  .brand strong {
-    font-size: .81rem;
-  }
-
-  .menu-toggle {
-    padding: 8px;
-  }
-}
-
-/* =========================================
-   ACCESSIBILITY
-   ========================================= */
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  .project-card,
-  .site-nav .nav-home,
-  .site-nav .nav-cta,
-  .site-nav .nav-dropdown > summary,
-  .site-nav .nav-dropdown > summary::after {
-    transition: none;
-  }
-}
+.header-inner {
+  max-width: 1440px;
+  min-height: 82px;
+  margin-inline: auto;
+  padding: 12px 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
