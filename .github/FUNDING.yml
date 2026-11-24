@@ -2,7 +2,7 @@
 # GR Studios AI LLC - Funding and Sponsorship
 # Where Imagination Meets Intelligence.
 
-github:
+github: GRStudiosAI
 patreon: grstudiosai
 open_collective:
 ko_fi:
@@ -10,16 +10,13 @@ tidelift:
 community_bridge:
 liberapay:
 issuehunt:
-lfx_crowdfunding:
 polar:
 buy_me_a_coffee:
 thanks_dev:
-gofundme: help-gr-studios-ai-grow
-paypal: PLB-4LDPZBRNDYBU
 
 custom:
-  # 💚 GoFundMe - Help GR Studios AI Grow
+  # GoFundMe
   - 'https://gofund.me/a219fc154'
 
-  # PayPal Donations
+  # PayPal
   - 'https://www.paypal.com/ncp/payment/PLB-4LDPZBRNDYBU'
