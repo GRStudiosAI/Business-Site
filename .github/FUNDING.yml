@@ -15,13 +15,11 @@ polar:
 buy_me_a_coffee:
 thanks_dev:
 gofundme: help-gr-studios-ai-grow
+paypal: PLB-4LDPZBRNDYBU
 
 custom:
-  # GoFundMe
-  - 'https://gofund.me/8d4f5e68e'
+  # 💚 GoFundMe - Help GR Studios AI Grow
+  - 'https://gofund.me/a219fc154'
 
-  # PayPal
+  # PayPal Donations
   - 'https://www.paypal.com/ncp/payment/PLB-4LDPZBRNDYBU'
-
-  # Patreon Membership Tiers
-  - 'https://www.patreon.com/c/grstudiosai/membership'
